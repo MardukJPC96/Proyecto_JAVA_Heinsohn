@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ambiente",
+    "\\ambiente\\semillero-hbt",
+    "\\ambiente\\semillero-hbt\\semillero-padre",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src\\main",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src\\main\\angular",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src\\main\\angular\\src",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src\\main\\angular\\src\\app",
+    "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src\\main\\angular\\src\\app\\nucleo"
+  ],
+  "SelectedNode": "\\ambiente\\semillero-hbt\\semillero-padre\\semillero-web\\src\\main\\angular\\src\\app\\nucleo\\nucleo.module.ts",
+  "PreviewInSolutionExplorer": false
+}
