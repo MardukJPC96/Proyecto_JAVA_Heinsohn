@@ -1,0 +1,59 @@
+<form>
+    <input value="Mostrar Tabla" type="button" (click)="mostrar()" />
+    <input value="Ocultar Tabla" type="button" (click)="ocultar()" />
+    <input value={{mostrarFormulario}} disabled="true"/>
+  <div><section>
+            <label for="name">Numero id</label>
+            <input name="name" type="text" [(ngModel)]="persona.numeroIdentificacion" placeholder="Documento de id" />
+          </section></div>  
+          <section><label for="name">Tipo de documento</label>
+            <select name="Selector de tipos"  [(ngModel)]="tipoDocumento" >
+
+              <option *ngFor="let valor of docident">{{valor}} </option>
+            
+            
+          </select></section>
+          
+    <div [ngStyle]="{'background-color':'gray'}">
+      <fieldset *ngIf="mostrarFormulario">
+        <legend>tabla de registro</legend>
+
+
+     
+
+        <table style="width:100%">
+            <tr>
+              <th>nombre</th>
+              <th>apellido</th> 
+              <th>edad</th>
+              <th>fecha nacimiento</th>
+              <th>n.identidad</th>
+              <th>tipo de id</th>
+              <th>numero Telefono</th>
+              <th>ciudad</th>
+              
+            </tr>
+            <tr>
+              <td>
+                 {{persona.nombre}}
+                </td>
+              <td>{{persona.apellido}}</td>  
+              
+              <td>{{persona.edad}}</td>
+              <td>{{nacimiento|date}}</td> 
+              <td>{{persona.numeroIdentificacion}}</td>
+              <td>{{persona.tipoIdentificacion}}</td>
+              
+             
+              <td>{{persona.numeroTel}}</td>
+              <td>{{persona.ciudad}}</td>
+            </tr>
+            
+          </table>        
+        
+       
+      </fieldset>
+    </div>
+    
+  </form>
+  
