@@ -34,14 +34,14 @@ public tipoDocumento:string;
         id: '0',
 		nombre: 'Juan',
 		apellido: 'Cano',
-		//tipoIdentificacion: 'Cedula',
+		tipoIdentificacion: 'Cedula',
 		numeroIdentificacion: '1053847359',
     mayorEdad:false,
     edad:'23',
     sexo:'Masculino',
     ciudad:"Manizales",
     roles:'',
-    //fechaNacimiento:new date,
+    
     numeroTel:'8917487'
     };
     this.personas = [];

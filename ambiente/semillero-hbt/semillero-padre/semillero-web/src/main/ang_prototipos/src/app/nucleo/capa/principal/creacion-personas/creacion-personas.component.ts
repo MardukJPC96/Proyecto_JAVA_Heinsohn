@@ -1,42 +1,52 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonaDTO } from  './modelo/personaDTO'; 
-
+import { PersonaDTO} from "../apoyo/modelo/personaDTO"; 
 @Component({
-  selector: 'app-apoyo',
-  templateUrl: './apoyo.component.html'
+  selector: 'app-creacion-personas',
+  templateUrl: './creacion-personas.component.html'
 })
-export class ApoyoComponent implements OnInit {
-  
-  public mostrarFormulario:boolean;
+export class CreacionPersonasComponent implements OnInit {
   
   public persona: PersonaDTO;
   public personas: PersonaDTO[];
-  
-  constructor() { }
+public docident=[];
+  public tipoId=[];
+  public editar:boolean;
+  public crear:boolean;
+
+  // ejemplo
+public tipoDoc:string;
+
 
   public ngOnInit() {
-  	this.mostrarFormulario = true;
+  
+    
+    this.tipoId=[
+      "cedula","tarjeta de identidad","contraseña"
+    ]
+    
   	this.persona = {
         id: '0',
 		nombre: '',
 		apellido: '',
-		tipoIdentificacion: '',
 		numeroIdentificacion: '',
-    //mayorEdad:false,
+    mayorEdad:false,
     edad:'',
     sexo:'',
-    //fechaNacimiento:"",
+    roles:'',
+    ciudad:"",
+    tipoIdentificacion:"", //prueba de errores
     numeroTel:''
     };
     this.personas = [];
   }
-
-  mostrar(){
-  	this.mostrarFormulario = true;
+  
+  constructor() { }
+  editarForm(){
+  	this.editar= true;
   }
   
-  ocultar(){
-  	this.mostrarFormulario = false;
+  crearForm(){
+  	this.crear = true;
   }
   
   public guardar() {
@@ -51,5 +61,5 @@ export class ApoyoComponent implements OnInit {
      
   }
   
-  
+
 }
